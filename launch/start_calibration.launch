@@ -9,7 +9,7 @@
   <param name="odometry_camera_calibration/directory" type="string" value="$(find odometry_camera_calibration)/calibration_data/"/>
   <param name="odometry_camera_calibration/paramDirectory" type="string" value="$(find odometry_camera_calibration)/params/"/>
   
-  <!--launch your gmapping launch file here -->
+  <!--launch package that publishes robot pose here -->
   <!--remap the robot odometry topic into "robot_pose" -->
   <include file="$(find mobile_robot)/launch/pioneer_gmapping.launch"/>
   <remap from="robot_pose" to="/RosAria/pose" />
