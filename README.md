@@ -79,5 +79,5 @@ this gives you a concrete image on how good your calibration went
 ## 3. visualize_calibration_results.launch
   - requires `camera_odom.npy laser_odom.npy Tcr.npy Tbw.npy` under `/calibration_data`
   - publishes **/calibrated_camera_pose** for rviz visualization
-  - publishes **/robot_odometry** for rviz visualization
+  - publishes **/robot_pose** for rviz visualization
   
