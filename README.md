@@ -19,7 +19,7 @@ for g2o dependency, go to `/thirdparty/g2o` and type
     mkdir build  
     cd build  
     cmake ..  
-    make -j4  
+    make -j8  
     roscd  
     cd ..  
     catkin_make
