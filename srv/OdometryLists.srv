@@ -1,0 +1,6 @@
+nav_msgs/Odometry[] cameraOdom
+nav_msgs/Odometry[] laserOdom
+---
+nav_msgs/Odometry Tcr
+nav_msgs/Odometry Tbw
+

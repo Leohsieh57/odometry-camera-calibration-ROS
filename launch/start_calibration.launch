@@ -1,0 +1,30 @@
+<launch>
+  <!--checkerboard params -->
+  <param name="odometry_camera_calibration/checkerBoardParam/nRows"  type="int" value="8"/>
+  <param name="odometry_camera_calibration/checkerBoardParam/nCols" type="int" value="6"/>
+  <param name="odometry_camera_calibration/checkerBoardParam/nFrames" type="int" value="64"/>
+  <!--beware that cell sizes has to be scaled to the same unit length as your laser slam pkg -->
+  <param name="odometry_camera_calibration/checkerBoardParam/cellSize" type="double" value="0.024"/>
+  <!--directory -->
+  <param name="odometry_camera_calibration/directory" type="string" value="$(find odometry_camera_calibration)/calibration_data/"/>
+  <param name="odometry_camera_calibration/paramDirectory" type="string" value="$(find odometry_camera_calibration)/params/"/>
+  
+  <!--launch your gmapping launch file here -->
+  <!--remap the robot pose topic into "robot_pose" -->
+  <include file="$(find mobile_robot)/launch/pioneer_gmapping.launch"/>
+  <remap from="robot_pose" to="/RosAria/pose" />
+  
+  <!--launch your camera launch file here -->
+  <!--remap the image topic of gmapping into "camera_image" -->
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch"/>
+  <remap from="camera_image" to="/usb_cam/image_raw" />
+  
+  <!--start calibration -->
+  <node pkg="odometry_camera_calibration" type="checkerboard_corner_detector.py" name= "corner_detector" output="screen"/>
+  <node pkg="odometry_camera_calibration" type="CalibrationServer" name= "extrisic_optimization_service" output="screen"/>
+  
+  <!--rviz -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mobile_robot)/rviz_config/pioneer_gmapping.rviz" />
+  
+</launch>
+

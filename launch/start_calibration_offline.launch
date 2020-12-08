@@ -1,0 +1,10 @@
+<launch>
+  <!--directory -->
+  <param name="odometry_camera_calibration/directory" type="string" value="$(find odometry_camera_calibration)/calibration_data/"/>
+  
+  <!--start calibration -->
+  <node pkg="odometry_camera_calibration" type="checkerboard_corner_detector_offline.py" name= "corner_detector_offline" output="screen"/>
+  <node pkg="odometry_camera_calibration" type="CalibrationServer" name= "extrisic_optimization_service" output="screen"/>
+  
+</launch>
+

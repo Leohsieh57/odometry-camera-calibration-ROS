@@ -1,0 +1,11 @@
+<launch>
+  <!--directory -->
+  <param name="odometry_camera_calibration/directory" type="string" value="$(find odometry_camera_calibration)/calibration_data/"/>
+  
+  <!--start calibration -->
+  <node pkg="odometry_camera_calibration" type="visualize_calibrate_results.py" name= "calibration_result_visaulizer" output="screen"/>
+  
+  <!--rviz -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find odometry_camera_calibration)/rviz_config/calibration.rviz" />
+</launch>
+
