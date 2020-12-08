@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     #publish the odometries
     camPub = rospy.Publisher('calibrated_camera_pose', Odometry, queue_size=10)
-    urgPub = rospy.Publisher('robot_odometry', Odometry, queue_size=10)
+    urgPub = rospy.Publisher('robot_pose', Odometry, queue_size=10)
     rate = rospy.Rate(30)
 
     #start while loop
