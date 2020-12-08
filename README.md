@@ -1,4 +1,4 @@
-# gmapping camera calibration ROS
+# odometry camera calibration ROS
 This package allows you to simultaneously estimate  
   - **camera intrinsic parameters**
   - **robot-camera coordinate transformation**
@@ -30,25 +30,25 @@ for g2o dependency, go to `/thirdparty/g2o` and type
 # 2. brief guide-through
 Type the following command to check out package features first
 
-    roslaunch gmapping_camera_calibration visualize_calibration_results.launch
+    roslaunch odometry_camera_calibration visualize_calibration_results.launch
 outcome will be my calibration result, based on experimental data under `/calibration_data` 
 
 # 3. parameters
-  - **gmapping_camera_calibration/checkerBoardParam/nRows**  
+  - **odometry_camera_calibration/checkerBoardParam/nRows**  
   row number of your checkerboard 
-  - **gmapping_camera_calibration/checkerBoardParam/nCols**  
+  - **odometry_camera_calibration/checkerBoardParam/nCols**  
   column number of your checkerboard
-  - **gmapping_camera_calibration/checkerBoardParam/nFrames**  
+  - **odometry_camera_calibration/checkerBoardParam/nFrames**  
   number of images you want to use for checkerboard calibration    
     > ⚠️ ***a large number may result in a really long calculation time***  
-  - **gmapping_camera_calibration/checkerBoardParam/cellSize**  
+  - **odometry_camera_calibration/checkerBoardParam/cellSize**  
   size of your checkerboard grids
   
 # 4. tutorials
 ## 1. collect calibration datas
 prepare a checkerboard and set up all parameters mentioned above  
   
-    roslaunch gmapping_camera_calibration start_calibration.launch
+    roslaunch odometry_camera_calibration start_calibration.launch
     
 now guide your robot around the fixed checkerboard to collect data  
 the terminal will contantly show `currently x frames`  
@@ -61,7 +61,7 @@ the result will be saved as `calibration_results.yml` under `/params`
 check if you can find `camera_odom.npy laser_odom.npy Tcr.npy Tbw.npy` under `/calibration_data`  
 if four of them are successfully generated, execute:
   
-    roslaunch gmapping_camera_calibration visualize_calibration_results.launch
+    roslaunch odometry_camera_calibration visualize_calibration_results.launch
     
 this gives you a concrete image on how good your calibration went
 # 5. launchfile usage
@@ -78,6 +78,6 @@ this gives you a concrete image on how good your calibration went
 
 ## 3. visualize_calibration_results.launch
   - requires `camera_odom.npy laser_odom.npy Tcr.npy Tbw.npy` under `/calibration_data`
-  - publishes **/gmapping_camera_calibration/calibrated_camera_pose** for rviz visualization
-  - publishes **/gmapping_camera_calibration/gmapping_robot_pose** for rviz visualization
+  - publishes **/calibrated_camera_pose** for rviz visualization
+  - publishes **/robot_odometry** for rviz visualization
   
