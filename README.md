@@ -5,12 +5,11 @@ This package allows you to simultaneously estimate
 
 Demo video: https://youtu.be/0YEWkK3-Adk  
 # 0. Haachamachama
-If you find this package useful, please subsrcibe to Haachama youtube channel
+If you find this package useful, please subsrcibe to Haachama youtube channel<br />
 [![Alt text](https\:\/\/yt3\.ggpht\.com\/gZpKn4gzn3mN82JrKeGtFTfwL3meZrenphTCYt2v6ZKnvJGUSy1sVQictwyjNyQqkPl9FjrNEA\=w2560-fcrop64\=1\,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj)](https://www.youtube.com/channel/UC1CfXB_kRs3C-zaeTG3oGyg)
 <p align="center" font size="+3">
       ⬆⬆⬆ click! ⬆⬆⬆
 </p>
-<font size="+9">Description</font>  
 
 # 1. dependencies & environment
 This package runs on ROS-noetic with the following dependencies:
