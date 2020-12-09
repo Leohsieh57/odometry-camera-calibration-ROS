@@ -1,7 +1,8 @@
 # odometry camera calibration ROS
 This package allows you to simultaneously estimate  
   - **camera intrinsic parameters**
-  - **robot-camera coordinate transformation**  
+  - **robot-camera coordinate transformation**
+
 check the following demo video:
 [![Alt text](https://github.com/Leohsieh57/odometry-camera-calibration-ROS/blob/main/readme_pictures/demo.png)](https://youtu.be/0YEWkK3-Adk)  
 If you find this package useful, please subsrcibe to Haachama youtube channel  
