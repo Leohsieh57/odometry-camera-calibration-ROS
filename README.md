@@ -5,7 +5,7 @@ This package allows you to simultaneously estimate
 
 Demo video: https://youtu.be/0YEWkK3-Adk  
 <br />
-**↓ click!↓   If you find this package useful, please subsrcibe to Haachama youtube channel   ↓ click!↓**
+**⬇ click!⬇   If you find this package useful, please subsrcibe to Haachama youtube channel   ⬇ click!⬇**
 [![Alt text](https\:\/\/yt3\.ggpht\.com\/gZpKn4gzn3mN82JrKeGtFTfwL3meZrenphTCYt2v6ZKnvJGUSy1sVQictwyjNyQqkPl9FjrNEA\=w2560-fcrop64\=1\,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj)](https://www.youtube.com/channel/UC1CfXB_kRs3C-zaeTG3oGyg)
 
 # 1. dependencies & environment
