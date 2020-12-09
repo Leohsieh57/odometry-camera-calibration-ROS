@@ -11,7 +11,7 @@ If you find this package useful, please subsrcibe to Haachama youtube channel
       ⬆⬆⬆ click! ⬆⬆⬆
 </p>
 
-# 1. dependencies & environment
+# 1. Dependencies & Environment
 This package runs on ROS-noetic with the following dependencies:
   - numpy
   - scipy(1.17.4)
@@ -32,7 +32,7 @@ For g2o dependency, go to `/thirdparty/g2o` and type
 > ⚠️ ***For old-version ROS users with python2.7***  
 >You have to set python path back to 3.5 since scipy1.17.4 doesn't support python2.7
 
-# 2. brief guide-through
+# 2. Brief Guide-through
 Type the following command to check out package features first
 
     roslaunch odometry_camera_calibration visualize_calibration_results.launch
