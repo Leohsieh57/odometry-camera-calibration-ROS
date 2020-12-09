@@ -11,9 +11,10 @@ If you find this package useful, please subsrcibe to Haachama youtube channel
 || <!-- empty table header -->
 |:--:| <!-- table header/body separator with center formatting -->
 | I'm centered! | <!-- cell gets column's alignment -->
-<p align="justify">
+<p align="center">
   Lorem ipsum
 </p>
+
 # 1. dependencies & environment
 This package runs on ROS-noetic with the following dependencies:
   - numpy
