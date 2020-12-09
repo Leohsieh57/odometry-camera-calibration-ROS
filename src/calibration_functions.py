@@ -62,7 +62,7 @@ def saveParams(camMat, dist, Tcr, saveDir):
     q = Tcr.pose.pose.orientation
     p = Tcr.pose.pose.position
     data = dict(
-        intrinsicParams = dict(
+        intrinsic = dict(
             fx = str(camMat[0][0]),
             fy = str(camMat[1][1]),
             cx = str(camMat[0][2]),
@@ -73,7 +73,7 @@ def saveParams(camMat, dist, Tcr, saveDir):
             p2 = str(dist[0][3]),
             k3 = str(dist[0][4])
         ),
-        extrinsicParams = dict(
+        extrinsic = dict(
             Tcr_qw = str(q.w),
             Tcr_qx = str(q.x),
             Tcr_qy = str(q.y),
@@ -83,6 +83,7 @@ def saveParams(camMat, dist, Tcr, saveDir):
             Tcr_pz = str(p.z)
         )
     )
+    data = dict(cameraParams = data)
     fn = saveDir+'calibration_results.yml'
     with open(fn, 'w') as outfile:
         yaml.dump(data, outfile, default_flow_style=False)

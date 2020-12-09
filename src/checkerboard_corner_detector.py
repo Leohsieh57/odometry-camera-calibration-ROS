@@ -24,7 +24,7 @@ objPoints, imgPoints, odomList = [], [], []
 
 def robotMoved(newOdom):
     global latestOdom
-    odomChanged = cf.norm(newOdom, latestOdom) > 0.02
+    odomChanged = cf.norm(newOdom, latestOdom) > 0.04
     latestOdom = copy(newOdom) if odomChanged else latestOdom
     return odomChanged
 
