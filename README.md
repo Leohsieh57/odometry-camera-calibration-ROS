@@ -8,9 +8,9 @@ Demo video: https://youtu.be/0YEWkK3-Adk
 If you find this package useful, please subsrcibe to Haachama youtube channel
 [![Alt text](https\:\/\/yt3\.ggpht\.com\/gZpKn4gzn3mN82JrKeGtFTfwL3meZrenphTCYt2v6ZKnvJGUSy1sVQictwyjNyQqkPl9FjrNEA\=w2560-fcrop64\=1\,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj)](https://www.youtube.com/channel/UC1CfXB_kRs3C-zaeTG3oGyg)
 <p align="center" font size = 5>
-  <font size="6">
+  <font size="+1">
       ⬆⬆⬆ click! ⬆⬆⬆
-   </font>
+  </font>
 </p>
 
 # 1. dependencies & environment
