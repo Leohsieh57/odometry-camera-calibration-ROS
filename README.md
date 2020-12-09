@@ -2,7 +2,7 @@
 This package allows you to simultaneously estimate  
   - **camera intrinsic parameters**
   - **robot-camera coordinate transformation**
-
+[![Alt text](https://img.youtube.com/vi/VID/0.jpg)](https://youtu.be/0YEWkK3-Adk)
 If you find this package useful, please subsrcibe to Haachama youtube channel  
 https://www.youtube.com/channel/UC1CfXB_kRs3C-zaeTG3oGyg
 

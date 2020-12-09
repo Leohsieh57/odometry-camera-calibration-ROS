@@ -4,11 +4,10 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
-        - /Status1
         - /Odometry1
         - /Odometry1/Shape1
         - /Odometry2
+        - /Odometry2/Shape1
       Splitter Ratio: 0.5
     Tree Height: 1195
   - Class: rviz/Selection
