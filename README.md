@@ -1,6 +1,6 @@
 # Odometry Camera Calibration ROS
 This package allows you to simultaneously estimate  
-  - **camera intrinsic parameters**
+  - **camera intrinsic parameters**  
   - **robot-camera coordinate transformation**
 
 Demo video: https://youtu.be/0YEWkK3-Adk  
@@ -12,11 +12,11 @@ If you find this package useful, please subsrcibe to Haachama youtube channel
 </p>
 
 # 1. Dependencies & Environment
-This package runs on ROS-noetic with the following dependencies:
-  - numpy
-  - scipy(1.17.4)
-  - Eigen3
-  - Sophus
+This package runs on ROS-noetic with the following dependencies:  
+  - numpy  
+  - scipy(1.17.4)  
+  - Eigen3  
+  - Sophus  
   - g2o(embedded in this repo)  
 
 For g2o dependency, go to `/thirdparty/g2o` and type
