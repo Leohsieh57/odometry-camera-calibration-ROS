@@ -1,5 +1,6 @@
 # Odometry Camera Calibration ROS
 This package allows you to simultaneously estimate  
+
   - **camera intrinsic parameters**  
   - **robot-camera coordinate transformation**
 
@@ -13,6 +14,7 @@ If you find this package useful, please subsrcibe to Haachama youtube channel
 
 # 1. Dependencies & Environment
 This package runs on ROS-noetic with the following dependencies:  
+
   - numpy  
   - scipy(1.17.4)  
   - Eigen3  
@@ -44,9 +46,10 @@ Outcome will be my calibration result, based on experimental data under `/calibr
   - **odometry_camera_calibration/checkerBoardParam/nCols**  
   Column number of your checkerboard
   - **odometry_camera_calibration/checkerBoardParam/nFrames**  
-  Number of images you want to use for checkerboard calibration    
-    > ⚠️ ***Important***  
-    > A large number may result in a really long calculation time
+  Number of images you want to use for checkerboard calibration
+
+  > ⚠️ ***Important***  
+  > A large number may result in a really long calculation time
   - **odometry_camera_calibration/checkerBoardParam/cellSize**  
   Size of your checkerboard grids
   
