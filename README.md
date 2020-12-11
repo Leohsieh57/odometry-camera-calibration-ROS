@@ -42,7 +42,7 @@ Outcome will be my calibration result, based on experimental data under `/calibr
   - **odometry_camera_calibration/checkerBoardParam/nRows**  
   Row number of your checkerboard 
   - **odometry_camera_calibration/checkerBoardParam/nCols**  
-  Rolumn number of your checkerboard
+  Column number of your checkerboard
   - **odometry_camera_calibration/checkerBoardParam/nFrames**  
   Number of images you want to use for checkerboard calibration    
     > ⚠️ ***Important***  
