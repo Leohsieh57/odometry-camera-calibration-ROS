@@ -48,8 +48,8 @@ Outcome will be my calibration result, based on experimental data under `/calibr
   - **odometry_camera_calibration/checkerBoardParam/nFrames**  
   Number of images you want to use for checkerboard calibration
 
-  > ⚠️ ***Important***  
-  > A large number may result in a really long calculation time
+	> ⚠️ ***Important***  
+	> A large number may result in a really long calculation time
   - **odometry_camera_calibration/checkerBoardParam/cellSize**  
   Size of your checkerboard grids
   
