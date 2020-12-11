@@ -32,7 +32,7 @@ For g2o dependency, go to `/thirdparty/g2o` and type
     catkin_make
    
 > ⚠️ ***For old-version ROS users with python2.7***  
->You have to set python path back to 3.5 since scipy1.17.4 doesn't support python2.7
+>You have to set python path back to 3.5 since scipy 1.17.4 doesn't support python2.7
 
 # 2. Brief Guide-through
 Type the following command to check out package features first
