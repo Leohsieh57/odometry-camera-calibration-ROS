@@ -64,7 +64,7 @@ The terminal will contantly show `currently x frames`
 After collected sufficient frames, the node will call `CalibrationServer` for estimation
 
 ## 2. calibration results
-The result will be saved as `calibration_results.yml` under `/params`
+The result will be saved as `calibration_results.yaml` under `/params`
 
 ## 3. visualize calibration results
 Check if you can find `camera_odom.npy laser_odom.npy Tcr.npy Tbw.npy` under `/calibration_data`  
@@ -76,9 +76,9 @@ This gives you a concrete image on how good your calibration went
 # 5. Launch File Usage
 ## 1. start_calibration.launch
   - Subscribes to **/robot_pose** for gmapping robot pose with `nav_msgs/Odometry`
-  - Subscribes to **/camera_image** for camera image with `sensor_msgs.msg/Image`
+  - Subscribes to **/camera_image** for camera image with `sensor_msgs/Image`
   - Generates `camera_odom.npy laser_odom.npy Tcr.npy Tbw.npy` under `/calibration_data`
-  - Generates `calibration_results.yml` under `/params`
+  - Generates `calibration_results.yaml` under `/params`
   
 ## 2. start_calibration_offline.launch
 **This launchfile is mostly for development debugging, you probably won't need it**
