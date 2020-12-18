@@ -15,7 +15,7 @@
   <remap from="robot_pose" to="/RosAria/pose" />
   
   <!--launch your camera launch file here -->
-  <!--remap the image topic of gmapping into "camera_image" -->
+  <!--remap the image topic of camera into "camera_image" -->
   <include file="$(find realsense2_camera)/launch/rs_aligned_depth.launch"/>
   <remap from="camera_image" to="/camera/color/image_raw" />
   

@@ -63,28 +63,28 @@ def saveParams(camMat, dist, Tcr, saveDir):
     p = Tcr.pose.pose.position
     data = dict(
         intrinsic = dict(
-            fx = str(camMat[0][0]),
-            fy = str(camMat[1][1]),
-            cx = str(camMat[0][2]),
-            cy = str(camMat[1][2]),
-            k1 = str(dist[0][0]),
-            k2 = str(dist[0][1]),
-            p1 = str(dist[0][2]),
-            p2 = str(dist[0][3]),
-            k3 = str(dist[0][4])
+            fx = float(camMat[0][0]),
+            fy = float(camMat[1][1]),
+            cx = float(camMat[0][2]),
+            cy = float(camMat[1][2]),
+            k1 = float(dist[0][0]),
+            k2 = float(dist[0][1]),
+            p1 = float(dist[0][2]),
+            p2 = float(dist[0][3]),
+            k3 = float(dist[0][4])
         ),
         extrinsic = dict(
-            Tcr_qw = str(q.w),
-            Tcr_qx = str(q.x),
-            Tcr_qy = str(q.y),
-            Tcr_qz = str(q.x),
-            Tcr_px = str(p.x),
-            Tcr_py = str(p.y),
-            Tcr_pz = str(p.z)
+            Tcr_qw = q.w,
+            Tcr_qx = q.x,
+            Tcr_qy = q.y,
+            Tcr_qz = q.x,
+            Tcr_px = p.x,
+            Tcr_py = p.y,
+            Tcr_pz = p.z
         )
     )
     data = dict(cameraParams = data)
-    fn = saveDir+'calibration_results.yml'
+    fn = saveDir+'calibration_results.yaml'
     with open(fn, 'w') as outfile:
         yaml.dump(data, outfile, default_flow_style=False)
     print('data successfully saved as',fn)
