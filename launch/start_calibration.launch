@@ -1,10 +1,10 @@
 <launch>
   <!--checkerboard params -->
   <param name="odometry_camera_calibration/checkerBoardParam/nRows"  type="int" value="8"/>
-  <param name="odometry_camera_calibration/checkerBoardParam/nCols" type="int" value="6"/>
+  <param name="odometry_camera_calibration/checkerBoardParam/nCols" type="int" value="5"/>
   <param name="odometry_camera_calibration/checkerBoardParam/nFrames" type="int" value="64"/>
   <!--beware that cell sizes has to be scaled to the same unit length as your laser slam pkg -->
-  <param name="odometry_camera_calibration/checkerBoardParam/cellSize" type="double" value="0.024"/>
+  <param name="odometry_camera_calibration/checkerBoardParam/cellSize" type="double" value="0.030"/>
   <!--directory -->
   <param name="odometry_camera_calibration/directory" type="string" value="$(find odometry_camera_calibration)/calibration_data/"/>
   <param name="odometry_camera_calibration/paramDirectory" type="string" value="$(find odometry_camera_calibration)/params/"/>
