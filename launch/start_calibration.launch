@@ -2,7 +2,7 @@
   <!--checkerboard params -->
   <param name="odometry_camera_calibration/checkerBoardParam/nRows"  type="int" value="8"/>
   <param name="odometry_camera_calibration/checkerBoardParam/nCols" type="int" value="5"/>
-  <param name="odometry_camera_calibration/checkerBoardParam/nFrames" type="int" value="64"/>
+  <param name="odometry_camera_calibration/checkerBoardParam/nFrames" type="int" value="128"/>
   <!--beware that cell sizes has to be scaled to the same unit length as your laser slam pkg -->
   <param name="odometry_camera_calibration/checkerBoardParam/cellSize" type="double" value="0.030"/>
   <!--directory -->
@@ -15,9 +15,9 @@
   <remap from="robot_pose" to="/RosAria/pose" />
   
   <!--launch your camera launch file here -->
-  <!--remap the image topic of camera into "camera_image" -->
-  <include file="$(find realsense2_camera)/launch/rs_aligned_depth.launch"/>
-  <remap from="camera_image" to="/camera/color/image_raw" />
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch"/>
+  <!--remap the image topic of camera into "color" -->
+  <remap from="camera_image" to="/usb_cam/image_raw" />
   
   <!--start calibration -->
   <node pkg="odometry_camera_calibration" type="checkerboard_corner_detector.py" name= "corner_detector" output="screen"/>
