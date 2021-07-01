@@ -4,7 +4,7 @@ import numpy as np
 from numpy.linalg import inv
 import cv2
 from nav_msgs.msg import Odometry
-from gmapping_camera_calibration.srv import OdometryLists
+from odometry_camera_calibration.srv import OdometryLists
 import calibration_functions as cf
 
 saveDir = rospy.get_param('odometry_camera_calibration/directory')
